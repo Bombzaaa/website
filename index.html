@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์ระบบ IOT</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Boxicns CDN Link  -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <div class="logo_name">Bomcoding</div>
+
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search">
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">แผนผังงาน</span>
+                </a>
+                <span class="tooltip">แผนผังงาน</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">ข้อมูลผู้ใช้</span>
+                </a>
+                <span class="tooltip">ข้อมูลผู้ใช้</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">ติดต่อ</span>
+                </a>
+                <span class="tooltip">ติดต่อ</span>
+            </li>
+            <li>
+                <a href="pageIOT.html">
+                    <i class='bx bx-microchip' ></i>
+                    <span class="links_name">ระบบควบคุม IOT</span>
+                </a>
+                <span class="tooltip">ระบบควบคุม IOT</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2' ></i>
+                    <span class="links_name">การวิเคราะห์</span>
+                </a>
+                <span class="tooltip">การวิเคราะห์</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder-open' ></i>
+                    <span class="links_name">จัดการไฟล์</span>
+                </a>
+                <span class="tooltip">จัดการไฟล์</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-save' ></i>
+                    <span class="links_name">บันทึก</span>
+                </a>
+                <span class="tooltip">บันทึก</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">ตั้งค่า</span>
+                </a>
+                <span class="tooltip">ตั้งค่า</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="profile.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">วิทวัส บุตรละคร</div>
+                        <div class="job">Web Designer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
